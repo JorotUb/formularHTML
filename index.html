@@ -84,11 +84,11 @@
                         <div class="row row-no-gutters" style="margin-bottom:10px;">
                           <div class="col-xs-6"><input type="text" class="form-control" placeholder="Operator Economic (Denumire)" aria-describedby="basic-addon1"></div>
 
-                          <div class="col-xs-6"><input type="text" class="form-control" placeholder="Adresa Punct Lucru (Str, Nr)" aria-describedby="basic-addon1"></div>
+                          <div class="col-xs-6"><input type="text" class="form-control" placeholder="CUI" aria-describedby="basic-addon1"></div>
                         </div>
 
                         <div class="row row-no-gutters" style="margin-bottom:10px;">
-                          <div class="col-xs-6"><input type="text" class="form-control" placeholder="CUI" aria-describedby="basic-addon1"></div>
+                          <div class="col-xs-6"><input type="text" class="form-control" placeholder="Data achizitionării (zz.ll.aaaa)" aria-describedby="basic-addon1"></div>
 
                         <div class="col-xs-6"><select class="form-control" >
                             <option>Arad</option>
@@ -97,15 +97,104 @@
                         </div>
 
                         <div class="row row-no-gutters" style="margin-bottom:10px;">
-                          <div class="col-xs-6"><input type="text" class="form-control" placeholder="Data achizitionării (zz.ll.aaaa)" aria-describedby="basic-addon1"></div>
+                          <div class="col-xs-6"><input  type="text" class="form-control" placeholder="Adresă Punct Lucru (Str, Nr)" aria-describedby="basic-addon1"></div>
+                        
 
-                        <div class="col-xs-6"><select class="form-control" title="Adresa">
-                            <option>Arad</option>
-                            <option>Bucuresti</option>
-                        </select></div>
+                        <div class="col-xs-6" style="margin-bottom:10px; background-color: white; border-radius: 5px;">Modalitatea Cumpararii
+                            <div class="btn-group" data-toggle="buttons">
+                              <label class="btn btn-primary" style=" background-color: white; color: black;margin-right: 20px; margin-left: 20px;" >
+                                <input type="radio" name="options" id="option2"> Fizic
+                              </label>
+                              <label class="btn btn-primary" style=" background-color: white; color: black;" >
+                                <input type="radio" name="options" id="option2"> Online
+                              </label>
+                            </div>
+                        </div>
+
+                        <div class="row row-no-gutters" style="margin-bottom:20px;">
+                            Birou Reclamatii
+                            <div class="col-xs-12">
+                                <select class="form-control" >
+                                    <option>-Selectati Biroul Adresat-</option>
+                                    <option>Bucuresti</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row row-no-gutters" style="margin-bottom:20px;">
+                            Dovada adresarii operatorului economic
+                            <p style="font-size: small;">(Completati acest camp SAU atasati raspunsul operatorului in campul de mai jos)</p>
+                            <div class="col-xs-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row row-no-gutters" style="margin-bottom:20px;">
+                            Detalii cu privire la aspectele reclamate
+                            <p style="font-size: small;">(Nu copiati din pagini web sau mail-uri. Puteti salva continut web sau mail intr-un fisier pdf)</p>
+                            <div class="col-xs-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row row-no-gutters" style="margin-bottom:20px; ">
+                            <div class="col-xs-6" style="margin-top:10px;">
+                                <p>Pretentiile dumneavoastra</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <select class="form-control" >
+                                    <option>-Selectati Pretentia Dumneavoastra-</option>
+                                    <option>Inlocuire</option>
+                                    <option>Returnare</option>
+                                    <option>Reparare</option>
+                                    <option>Reziliere</option>
+                                    <option>Control</option>
+                                </select>
+                            </div>
+                        </div>
                         </div>
 
                     <p class='titleBox'>Documente probatorii</p>
+                    <div class="container-fluid" style="background-color: white;">
+                        <center style="padding: 32px 32px;font-size: medium; font-weight: bold;">
+                            <div class="row row-no-gutters" style="margin-bottom:20px;  border-style: dotted; border-top: 0px; border-left: 0px; border-right: 0px;">
+                            <div class="col-xs-6" style="margin-top:10px;">
+                                <p>Factura / Bon Fiscal / Chitanta</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-default">Alege Fisierul</button>
+                            </div>
+                            </div>
+
+                            <div class="row row-no-gutters" style="margin-bottom:20px;  border-style: dotted; border-top: 0px; border-left: 0px; border-right: 0px;">
+                            <div class="col-xs-6" style="margin-top:10px;">
+                                <p>Contract</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-default">Alege Fisierul</button>
+                            </div>
+                            </div>
+
+                            <div class="row row-no-gutters" style="margin-bottom:20px;  border-style: dotted; border-top: 0px; border-left: 0px; border-right: 0px;">
+                            <div class="col-xs-6" style="margin-top:10px;">
+                                <p>Certificat de garantie</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-default">Alege Fisierul</button>
+                            </div>
+                            </div>
+
+                            <div class="row row-no-gutters" style="margin-bottom:20px;  border-style: dotted; border-top: 0px; border-left: 0px; border-right: 0px;">
+                            <div class="col-xs-6" style="margin-top:10px;">
+                                <p>Dovada adresarii operatorului</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-default">Alege Fisierul</button>
+                            </div>
+                            </div>
+
+                        </center>
+                    </div>
     			</center>
             </div>
             <div class="footer">
